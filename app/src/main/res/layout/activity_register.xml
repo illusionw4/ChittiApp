@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/procrastinating"
+        android:gravity="center"
+        android:text="CHITTI"
+        android:textColor="@color/gold"
+        android:textSize="34dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsre"
+        android:text="Hello."
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/registertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotob"
+        android:text="Register!"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcolor"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/robotore"
+        android:hint="Enter Name"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registertitle"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcolor"
+        android:fontFamily="@font/robotore"
+        android:hint="Enter Your Email ID"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcolor"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/robotore"
+        android:hint="Enter Your Mobile No."
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcolor"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotore"
+        android:hint="Enter Password"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logsignupbutt"
+        android:elevation="35dp"
+        android:text="Go!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/alreadyuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Sign In"
+        app:layout_constraintTop_toBottomOf="@id/btngo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:fontFamily="@font/times"
+        android:layout_marginTop="6dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
